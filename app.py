@@ -121,6 +121,7 @@ def load_models():
     models = {
         "label_encoder": safe_load("label_encoder.pkl"),
         "tfidf_vectorizer": safe_load("tfidf_vectorizer.pkl"),
+
         "model_tfidf": safe_load("best_model_tfidf.pkl"),
         "model_sbert": safe_load("best_model_sbert.pkl"),
         "skills_dict": {},
