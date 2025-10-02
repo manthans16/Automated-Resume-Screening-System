@@ -1,8 +1,8 @@
-# 📄 Automated Resume Screening and Classification System
+# Automated Resume Screening and Classification System
 
 A resume screening system built with Machine Learning and NLP that automatically classifies resumes into job categories, extracts skills, and matches candidates to job descriptions using TF-IDF and SBERT embeddings. Includes an interactive Streamlit app for HR teams to analyze single or bulk resumes and rank candidates by relevance.
 
-## 🎯 Project Overview
+## Project Overview
 This project implements a resume screening system that:
 - Predicts job categories from resume text with ~85-90% accuracy
 - Extracts technical and soft skills automatically
@@ -10,7 +10,7 @@ This project implements a resume screening system that:
 - Ranks candidates based on relevance
 - Provides an interactive web interface for HR teams
 
-## 🏗️ Architecture
+## Architecture
 ```
 ├── project.ipynb              # Complete ML pipeline and analysis
 ├── app.py                     # Streamlit web application
@@ -25,7 +25,7 @@ This project implements a resume screening system that:
 └── README.md                  # This file
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 ### Prerequisites
 - Python 3.8+
 - pip package manager
@@ -44,14 +44,14 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 
 # 4. (Optional) Run Jupyter Notebook to retrain models
-jupyter notebook project.ipynb
+Jupyter Notebook project.ipynb
 
 # 5. Launch the Streamlit app
 streamlit run app.py
 ```
 The app will open in your browser at `http://localhost:8501`
 
-## 📦 Requirements
+## Requirements
 `requirements.txt` should include:
 ```
 pandas==2.0.3
@@ -72,7 +72,7 @@ pdfplumber==0.9.0
 docx2txt==0.8
 ```
 
-## 📊 Dataset Format
+## Dataset Format
 Your `UpdatedResumeDataSet.csv` should have:
 
 | Column   | Description                           |
@@ -82,9 +82,9 @@ Your `UpdatedResumeDataSet.csv` should have:
 
 Example:
 ```csv
-Category,Resume
-"Data Science","Experienced data scientist with Python, ML..."
-"Java Developer","5 years Java development, Spring Boot..."
+Category, Resume
+"Data Science", "Experienced data scientist with Python, ML..."
+"Java Developer" ,"5 years Java development, Spring Boot..."
 ```
 
 ## 🧠 Machine Learning Pipeline
@@ -115,9 +115,9 @@ Category,Resume
 - **JD Matching**: Cosine similarity with SBERT
 - **Candidate Ranking**: Automated shortlisting
 
-## 🌐 Streamlit App Features
+##  Streamlit App Features
 ### Mode 1: Single Resume Analysis
-- Upload or paste individual resume
+- Upload or paste an individual resume
 - Get predicted job category with confidence
 - Extract technical and soft skills
 - Resume quality assessment
@@ -152,7 +152,7 @@ Category,Resume
 
 *Note: Results vary based on dataset quality and size*
 
-## 🚀 Deployment Options
+## Deployment Options
 ### Option 1: Streamlit Cloud (Easiest)
 1. Push code to GitHub
 2. Go to [share.streamlit.io](https://share.streamlit.io)
