@@ -10,6 +10,8 @@ This project implements a resume screening system that:
 - Ranks candidates based on relevance
 - Provides an interactive web interface for HR teams
 
+- ###Live Demo: resume-screening-system-ms23.streamlit.app
+
 ## Architecture
 ```
 ├── project.ipynb              # Complete ML pipeline and analysis
