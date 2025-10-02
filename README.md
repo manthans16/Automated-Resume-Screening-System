@@ -13,8 +13,6 @@ This project implements a resume screening system that:
 - Ranks candidates based on relevance
 - Provides an interactive web interface for HR teams
 
-- 
-
 ## Architecture
 ```
 ├── project.ipynb              # Complete ML pipeline and analysis
