@@ -237,3 +237,8 @@ processed_resumes.csv
 .DS_Store
 .vscode/
 
+# Ignore large ML models
+*.pkl
+*.joblib
+*.safetensors
+*.bin
