@@ -87,7 +87,7 @@ Category, Resume
 "Java Developer" ,"5 years Java development, Spring Boot..."
 ```
 
-## 🧠 Machine Learning Pipeline
+##  Machine Learning Pipeline
 ### 1. Data Preprocessing
 - Text cleaning (remove URLs, emails, special chars)
 - Tokenization and lemmatization
