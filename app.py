@@ -29,7 +29,7 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
-
+st.set_page_config(page_title="Resume Screening System", page_icon="📄", layout="wide")
 # Optional file parsing libs
 try:
     import pdfplumber
@@ -66,7 +66,7 @@ ensure_nltk()
 # -----------------------------------------------------------------------------
 # UI config + small CSS
 # -----------------------------------------------------------------------------
-st.set_page_config(page_title="Resume Screening System", page_icon="📄", layout="wide")
+
 st.markdown(
     """
     <style>
