@@ -205,3 +205,35 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/
+!/.streamlit/config.toml
+
+# Model cache / HuggingFace
+models/.locks/
+models/.no_exist/
+models/refs/
+models/snapshots/
+
+# Large generated files
+*.png
+*.jpg
+*.jpeg
+# Ignore generated CSVs but keep the dataset
+processed_resumes.csv
+
+
+# OS / IDE
+.DS_Store
+.vscode/
+
