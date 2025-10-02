@@ -233,14 +233,14 @@ def main():
 
             st.write("### 🛠 Skills:", ", ".join(skills) if skills else "None detected")
 
-            # Debug
-            with st.expander("DEBUG (developer only)", expanded=False):
-                st.write(" - label_encoder:", type(models.get("label_encoder")), getattr(models.get("label_encoder"), "classes_", None))
-                st.write(" - sbert_model:", type(models.get("sbert_model")))
-                st.write(" - model_sbert:", type(models.get("model_sbert")))
-                st.write(" - tfidf_vectorizer:", type(models.get("tfidf_vectorizer")))
-                st.write(" - model_tfidf:", type(models.get("model_tfidf")))
-                st.write("Preprocessed text (200 chars):", results["pre"][:200])
+            # # Debug
+            # with st.expander("DEBUG (developer only)", expanded=False):
+            #     st.write(" - label_encoder:", type(models.get("label_encoder")), getattr(models.get("label_encoder"), "classes_", None))
+            #     st.write(" - sbert_model:", type(models.get("sbert_model")))
+            #     st.write(" - model_sbert:", type(models.get("model_sbert")))
+            #     st.write(" - tfidf_vectorizer:", type(models.get("tfidf_vectorizer")))
+            #     st.write(" - model_tfidf:", type(models.get("model_tfidf")))
+            #     st.write("Preprocessed text (200 chars):", results["pre"][:200])
 
     elif mode == "Bulk Resume Screening":
         files = st.file_uploader("Upload multiple resumes", type=["pdf","docx","txt"], accept_multiple_files=True)
